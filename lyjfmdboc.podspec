@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "lyjfmdboc"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "LYJFMDB的oc版本"
 
   # This description is used to generate tags and improve search results.

@@ -9,7 +9,7 @@
 #import "TableInfo.h"
 #import <objc/runtime.h>
 #import "NSObject+TSStorageManager.h"
-#import "FMDBModel.h"
+#import <FMDB/FMDBModel.h>
 
 static NSMutableDictionary * tableInfoMap;
 

@@ -37,8 +37,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -130,6 +130,5 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "FMDB"
-
+  s.dependency 'FMDB', '~> 2.3'
 end

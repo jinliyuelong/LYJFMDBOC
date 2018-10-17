@@ -209,6 +209,14 @@
     NSEnumerator *enumerator = [propertys keyEnumerator];
     NSString * key;
     
+//    c char         C unsigned char
+//    i int          I unsigned int
+//    l long         L unsigned long
+//    s short        S unsigned short
+//    d double       D unsigned double
+//    f float        F unsigned float
+//    q long long    Q unsigned long long
+//    B BOOL
     while ((key = [enumerator nextObject])) {
         
         if ([key isEqualToString:column]) {

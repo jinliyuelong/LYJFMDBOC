@@ -7,10 +7,10 @@
 //
 
 #import "TSStorageManager.h"
-#import <FMDB/FMDatabase.h>
+#import "FMDatabase.h"
 #import <objc/runtime.h>
 #import "SqlBuilder.h"
-#import <FMDB/FMDatabaseAdditions.h> // 导入头文件
+#import "FMDatabaseAdditions.h" // 导入头文件
 #import "NSString+Contain.h"
 
 
@@ -256,7 +256,6 @@ static TSStorageManager *sharedInstance = nil;
         NSMutableDictionary * propertys = tableInfo.getPropertyMap;
         NSEnumerator *enumerator = [propertys keyEnumerator];
         NSString * key;
-        
         while ((key = [enumerator nextObject])) {
             if (![self istableExistColum:tableInfo.getTableName colum:key]) {
                 NSString * type =  [propertys valueForKey:key];
